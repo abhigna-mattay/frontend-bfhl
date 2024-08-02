@@ -7,7 +7,7 @@ export const postData = async (data) => {
         const response = await axios.post(BASE_URL, data);
         return response.data;
     } catch (error) {
-        // You can also log the error to the console for debugging
+        
         console.error('Error posting data:', error);
         throw new Error(error.response ? error.response.data.error : error.message);
     }
